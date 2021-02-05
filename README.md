@@ -1,6 +1,6 @@
-# projetc1
+# Bytebank
 
-A new Flutter project.
+Projeto para estudos.
 
 ## Getting Started
 

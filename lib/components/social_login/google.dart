@@ -14,18 +14,8 @@ import 'package:google_sign_in/google_sign_in.dart';
 GoogleSignIn _googleSignIn = GoogleSignIn(
   scopes: <String>[
     'email',
-    // 'https://www.googleapis.com/auth/contacts.readonly',
   ],
 );
-
-// void main() {
-//   runApp(
-//     MaterialApp(
-//       title: 'Google Sign In',
-//       home: SignInDemo(),
-//     ),
-//   );
-// }
 
 class SignInDemo extends StatefulWidget {
   @override
@@ -34,7 +24,7 @@ class SignInDemo extends StatefulWidget {
 
 class SignInDemoState extends State<SignInDemo> {
   GoogleSignInAccount _currentUser;
-  String _contactText;
+  //String _contactText;
 
   @override
   void initState() {
@@ -44,11 +34,8 @@ class SignInDemoState extends State<SignInDemo> {
         _currentUser = account;
       });
       print(_currentUser);
-      // if (_currentUser != null) {
-      //   _handleGetContact();
-      // }
     });
-    //_googleSignIn.signInSilently();
+    _googleSignIn.signInSilently();
   }
 
   // Future<void> _handleGetContact() async {
